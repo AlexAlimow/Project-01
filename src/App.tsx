@@ -4,6 +4,7 @@ import Goodbye from "./components/Goodbye/Goodbye";
 import Counter from "./components/Counter/Counter";
 import Tool from "./components/Tool/Tool";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
+import IdealWeightCalculator from "./components/IdealWeightCalculator/IdealWeightCalculator";
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
       <Counter />
       <Tool />
       <ProfileCard {...johnDoe} />
-      
+      <IdealWeightCalculator />
     </>
   );
 }
