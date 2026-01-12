@@ -8,7 +8,7 @@ interface ProfileCardProps {
 
 function ProfileCard({ avatar, name, description }: ProfileCardProps) {
   return (
-    <div className={styles.profileCard}>
+    <div className={styles.container}>
       <img src={avatar} alt={`avatar of ${name}`} className={styles.avatar} />
       <h2>{name}</h2>
       <p>{description}</p>

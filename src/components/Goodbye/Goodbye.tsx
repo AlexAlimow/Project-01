@@ -1,3 +1,5 @@
+import s from './Goodbye.module.css';
+
 interface GoodbyeProps {
     familyName: string;
     score?: number;
@@ -5,7 +7,7 @@ interface GoodbyeProps {
 
 function Goodbye({ familyName, score }: GoodbyeProps) {
     return (
-        <div>
+        <div className= {s.container}>
             <p>Goodbye, {familyName}!</p>
             {score ? `Your score is ${score}` : null}
         </div>

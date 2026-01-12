@@ -1,4 +1,5 @@
 import { useState } from "react";
+import s from "./IdealWeightCalculator.module.css"
 
 export default function IdealWeightCalculator() {
     const [height, setHeight] = useState('170');
@@ -18,7 +19,7 @@ export default function IdealWeightCalculator() {
     }
 
     return (
-        <div>
+        <div className= {s.container}>
             <h2>Calculate your ideal weight</h2>
 
             <select name="gender"

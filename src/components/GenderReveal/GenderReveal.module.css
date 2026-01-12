@@ -7,3 +7,12 @@
   flex-direction: column;
   gap: 12px;
 }
+
+
+.male {
+  background-color: lightblue;
+}
+
+.female {
+  background-color: lightpink;
+}

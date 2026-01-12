@@ -5,6 +5,8 @@ import Counter from "./components/Counter/Counter";
 import Tool from "./components/Tool/Tool";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
 import IdealWeightCalculator from "./components/IdealWeightCalculator/IdealWeightCalculator";
+import GenderReveal from "./components/GenderReveal/GenderReveal";
+import SpaceMissionForm from "./components/SpaceMissionForm/SpaceMissionForm";
 
 
 function App() {
@@ -19,13 +21,15 @@ function App() {
       <h1>Hello Vite + React!</h1>
       {/* <Greetings name="Alex" />
       <Greetings name="Alisher" /> */}
-
-      <Goodbye familyName="Smith" score={92} />
-      <Goodbye familyName="Johnson" />
+      <GenderReveal />
+      <SpaceMissionForm />
+      
       <Counter />
       <Tool />
       <ProfileCard {...johnDoe} />
       <IdealWeightCalculator />
+      <Goodbye familyName="Smith" score={92} />
+      <Goodbye familyName="Johnson" />
     </>
   );
 }
