@@ -1,18 +1,23 @@
 import { NavLink, Outlet } from "react-router-dom";
+import s from "./ProfileLayout.module.css"; // создадим отдельный CSS
 
 export default function ProfileLayout() {
   return (
-    <div>
+    <section className={s.container}>
       <h2>Личный кабинет</h2>
 
-      <nav>
-        <NavLink to="info">Информация</NavLink> |{" "}
-        <NavLink to="settings">Настройки</NavLink>
+      <nav className={s.nav}>
+        <NavLink to="info" className={({ isActive }) => isActive ? s.active : ""}>
+          Информация
+        </NavLink>
+        <NavLink to="settings" className={({ isActive }) => isActive ? s.active : ""}>
+          Настройки
+        </NavLink>
       </nav>
 
-      <hr />
-
-      <Outlet />
-    </div>
+      <div className={s.outlet}>
+        <Outlet />
+      </div>
+    </section>
   );
 }

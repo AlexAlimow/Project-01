@@ -1,19 +1,43 @@
 .container {
-  height: 70px;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding: 24px;
-  gap: 24px;
-  background-color: lightblue;
+  gap: 12px;
+  padding: 12px 16px;
+
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  background-color: transparent; /* ✅ важно, чтобы header светлый был целиком */
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .link {
-  color: black;
+  white-space: nowrap;
   text-decoration: none;
-  font-size: larger;
+  font-size: 14px;
+  color: #333; /* тёмный текст хорошо на светлом header */
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
 }
-.link:hover {
-  color: darkslateblue;
+
+.link.active {
+  background: #b2f0f0; /* чуть темнее для активного пункта */
+  color: #005555;
+  font-weight: 600;
+}
+
+/* 💻 планшет и выше */
+@media (min-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+
+  .link {
+    font-size: 16px;
+  }
 }

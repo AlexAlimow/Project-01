@@ -5,17 +5,18 @@ import s from "./Layout.module.css";
 export default function Layout() {
     return (
         <div className={s.page}>
-            <header>
-                <NavBar />
-            </header>
+                <header className={s.header}>
+                    <NavBar />
+                </header>
+           
 
-            <div className={s.container}>
-                <Outlet />
-            </div>
+            <main className={s.container}>
+                <div className={s.content}>
+                    <Outlet />
+                </div>
+            </main>
 
-            <footer className={s.footer}>
-                Footer
-            </footer>
+            <footer className={s.footer}>© 2026</footer>
         </div>
     );
 }
