@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import s from "./Results.module.css";
-import type { GenderInformation } from "../../types/GenderInformation";
+import type { GenderInformation } from "./types/GenderInformation";
 
 export const Results: FC<{ info: GenderInformation | undefined }> = ({ info }) => {
     if (!info) return <p>No information yet. Please insert name</p>;

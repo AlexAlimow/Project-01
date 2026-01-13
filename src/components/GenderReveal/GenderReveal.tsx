@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { GenderInformation } from "../../types/GenderInformation";
+import type { GenderInformation } from "./types/GenderInformation";
 import s from "./GenderReveal.module.css";
 import { Results } from "./Results";
 export default function GenderReveal() {
