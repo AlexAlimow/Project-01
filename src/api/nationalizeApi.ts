@@ -1,4 +1,4 @@
-import type { NationalityInformation } from "../types/NationalityInformation";
+import type { NationalityInformation } from "../components/NationalityDetector/types/NationalityInformation";
 
 export const fetchNationality = async (
   name: string

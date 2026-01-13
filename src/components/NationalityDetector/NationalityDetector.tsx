@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { fetchNationality } from "../../api/nationalizeApi";
-import type { NationalityInformation } from "../../types/NationalityInformation";
+import type { NationalityInformation } from "./types/NationalityInformation";
 import { Results } from "./Results";
 import s from "./Results.module.css";
 

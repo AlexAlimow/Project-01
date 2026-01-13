@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import type { NationalityInformation } from "../../types/NationalityInformation";
+import type { NationalityInformation } from "./types/NationalityInformation";
 import s from "./Results.module.css";
 
 type Props = {
