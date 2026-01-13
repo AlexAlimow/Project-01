@@ -7,6 +7,7 @@ import ProfileCard from "./components/ProfileCard/ProfileCard";
 import IdealWeightCalculator from "./components/IdealWeightCalculator/IdealWeightCalculator";
 import GenderReveal from "./components/GenderReveal/GenderReveal";
 import SpaceMissionForm from "./components/SpaceMissionForm/SpaceMissionForm";
+import { NationalityDetector } from "./components/NationalityDetector/NationalityDetector";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <h1>Hello Vite + React!</h1>
       {/* <Greetings name="Alex" />
       <Greetings name="Alisher" /> */}
+      <NationalityDetector />
       <GenderReveal />
       <SpaceMissionForm />
       
