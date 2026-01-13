@@ -22,6 +22,15 @@ export default function NavBar() {
             <NavLink to={"/ideal-weight-calculator"} className={s.link}>
                 Ideal Weight Calculator
             </NavLink>
+            <NavLink to={"/about"} className={s.link}>
+                About
+            </NavLink>
+            <NavLink to={"/contact"} className={s.link}>
+                Contact
+            </NavLink>
+            <NavLink to="/profile/info" className={s.link}>
+                Profile
+            </NavLink>
 
 
         </nav>
