@@ -1,0 +1,26 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* чтобы page занимал всю высоту окна */
+}
+
+.container {
+  background-color: lightcyan;
+  margin: 24px 32px;
+  padding: 24px;
+  border-radius: 24px;
+
+  display: flex;           /* flex-контейнер */
+  flex-direction: column;  /* если несколько элементов вертикально */
+  justify-content: center; /* центрируем по вертикали */
+  align-items: center;     /* центрируем по горизонтали */
+
+  flex: 1;                 /* занимает всё доступное пространство между шапкой и футером */
+  gap: 12px;
+}
+.footer {
+  text-align: center;
+  color: gray;
+  font-size: large;
+  margin-top: 12px;
+}

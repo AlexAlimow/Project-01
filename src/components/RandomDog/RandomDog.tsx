@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import s from "./RandomDog.module.css";
 
 export default function RandomDog() {
   const [image, setImage] = useState<string | undefined>(undefined);
@@ -16,28 +17,15 @@ export default function RandomDog() {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchDogImage();
   }, []);
 
   return (
-    <div>
-      <h2>Random Dog</h2>
-      <img src={image} alt="dog" />
+    <div className={s.container}>
+      <img src={image} alt="dog" className={s.dogImage} />
     </div>
   );
 }
 
 // Component life-cycle:  mount -> update -> unmount
-
-// useEffect без массива зависимостей
-  // при mount и при любых изменениях - update
-  useEffect(() => {
-    console.log("Use effect in Space Mission - no dependencies");
-  });
-
-  // useEffect с зависимостями
-  // при mount 
-  // или когда меняется указанная в массиве переменная - name
-  useEffect(() => {
-    console.log("Use effect in Space Mission - with dependecie on name");
-  }, [name]);
