@@ -1,5 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom";
 import s from "./ProfileLayout.module.css"; // создадим отдельный CSS
+import clsx from "clsx";
+
+const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+  clsx(isActive && s.active);
 
 export default function ProfileLayout() {
   return (
@@ -7,10 +11,10 @@ export default function ProfileLayout() {
       <h2>Личный кабинет</h2>
 
       <nav className={s.nav}>
-        <NavLink to="info" className={({ isActive }) => isActive ? s.active : ""}>
+        <NavLink to="info" className={navLinkClass}>
           Информация
         </NavLink>
-        <NavLink to="settings" className={({ isActive }) => isActive ? s.active : ""}>
+        <NavLink to="settings" className={navLinkClass}>
           Настройки
         </NavLink>
       </nav>

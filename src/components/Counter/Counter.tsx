@@ -33,14 +33,11 @@ function Counter() {
             <button type="button" onClick={handleResetCounter}>Clear
             </button>
             <button type="button" onClick={handleRandom}>Random
-            </button> */
-      }
+            </button> */}
       <Button onClick={handlePlusOne} child="+1" />
       <Button onClick={handleMinusTwo} child="-2" />
       <Button onClick={handleRandom} child="Random" />
       <Button onClick={handleResetCounter} child="Clear" />
-
-
     </section>
   );
 }

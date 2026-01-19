@@ -4,7 +4,6 @@ import type { NationalityInformation } from "./types/NationalityInformation";
 import { Results } from "./Results";
 import s from "./Results.module.css";
 
-
 export const NationalityDetector = () => {
   const [name, setName] = useState("");
   const [info, setInfo] = useState<NationalityInformation | undefined>();
@@ -31,7 +30,7 @@ export const NationalityDetector = () => {
   };
 
   return (
-    <div className= {s.container}>
+    <div className={s.container}>
       <h2>Nationality detector</h2>
 
       <input

@@ -1,8 +1,7 @@
 interface ButtonProps {
-    onClick: () => void;
-    child: React.ReactNode;
+  onClick: () => void;
+  child: React.ReactNode;
 }
-
 
 function Button({ onClick, child }: ButtonProps) {
   return (

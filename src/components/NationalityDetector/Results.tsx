@@ -22,15 +22,16 @@ export const Results: FC<Props> = ({ info }) => {
 
       <h4>Possible nationalities:</h4>
       <ul>
-  {info.country
-    .sort((a, b) => b.probability - a.probability)
-    .slice(0, 3)
-    .map((item) => (
-      <li key={item.country_id}>
-        {getCountryName(item.country_id)} — {(item.probability * 100).toFixed(1)}%
-      </li>
-    ))}
-</ul>
+        {info.country
+          .sort((a, b) => b.probability - a.probability)
+          .slice(0, 3)
+          .map((item) => (
+            <li key={item.country_id}>
+              {getCountryName(item.country_id)} —{" "}
+              {(item.probability * 100).toFixed(1)}%
+            </li>
+          ))}
+      </ul>
     </div>
   );
 };

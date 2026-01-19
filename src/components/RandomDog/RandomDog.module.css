@@ -1,20 +1,20 @@
 /* RandomDog.module.css */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .dogImage {
-    width: 450px;
-    /* фиксированная ширина */
-    height: 350px;
-    /* фиксированная высота */
-    object-fit: cover;
-    /* сохраняет пропорции и обрезает лишнее */
-    border-radius: 12px;
-    /* по желанию, закругленные края */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* тень для красоты */
+  width: 450px;
+  /* фиксированная ширина */
+  height: 350px;
+  /* фиксированная высота */
+  object-fit: cover;
+  /* сохраняет пропорции и обрезает лишнее */
+  border-radius: 12px;
+  /* по желанию, закругленные края */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* тень для красоты */
 }
